@@ -26,6 +26,7 @@ def add_automenu(page):
     if cache is None:
         cache = get_pagelist()
     page['automenu'] = cache
+    page['autofoot'] = get_pagefoot()
 
 
 def get_pagelist():
@@ -59,3 +60,10 @@ def add_node(node, menu):
 
 def sorted_children(node):
     return sorted(node.childlist, key=lambda n: n.get('menu_order', 0))
+
+def get_pagefoot():
+    foot = ['<div class="copyright">© ']
+    foot.append('<a href="@root/about//">%s</a> 2018 | ' % ivy.site.config['author'])
+    foot.append('<a href="%s">Github</a> | ' % ivy.site.config['github'])
+    foot.append('<a href="%s">Twitter</a></div>' % ivy.site.config['twitter'])
+    return ''.join(foot)

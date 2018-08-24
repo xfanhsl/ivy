@@ -7,6 +7,7 @@ import shutil
 import unicodedata
 import re
 import sys
+import time
 
 from . import hooks
 
@@ -98,3 +99,14 @@ def safeprint(*objects, sep=' ', end='\n', file=sys.stdout):
             string = string.encode(enc, errors='replace').decode(enc)
             strings.append(string)
         print(*strings, sep=sep, end=end, file=file)
+
+
+# change "%Y-%m-%d" to "%Y/%m/%d" format
+def timeFormat(t, format="%Y/%m/%d"):
+    timeArray = time.strptime(t, "%Y-%m-%d")
+    return time.strftime(format, timeArray)
+
+# change "%Y-%m-%d" to tick
+def timeTick(t, format="%Y-%m-%d"):
+    timeArray = time.strptime(t, format)
+    return int(time.mktime(timeArray))

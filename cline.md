@@ -54,6 +54,6 @@
 			----tensorflow python
 			
 
-	增加categories、author、date等key的支持
+	增加categories、author、date、tags等key的支持
 	字体css改动
 	ibis模板生成改动

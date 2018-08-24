@@ -14,7 +14,7 @@
 
 # Choose the theme to use when building your site. This variable should
 # specify the name of a theme directory in your site's 'lib' folder.
-theme = "graphite"
+theme = "cline"
 
 
 # ------------------------------------------------------------------------------
@@ -46,3 +46,8 @@ root = ""
 # Choose a file extension for generated files, e.g. ".html" (the default),
 # or specify a forward slash ("/") to generate directory-style urls.
 extension = ".html"
+
+author = "CLine"
+dirmark = "__dir__"
+github = "https://github.com/supercline"
+twitter = ""

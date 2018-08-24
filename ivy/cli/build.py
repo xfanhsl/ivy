@@ -86,11 +86,11 @@ def builder():
 
     # Copy the theme's resource files to the output directory.
     if os.path.isdir(site.theme('resources')):
-        utils.copydir(site.theme('resources'), site.out())
+        utils.copydir(site.theme('resources'), os.path.join(site.out(), "assets"))
 
     # Copy the site's resource files to the output directory.
     if os.path.exists(site.res()):
-        utils.copydir(site.res(), site.out())
+        utils.copydir(site.res(), os.path.join(site.out(), "assets"))
 
     # Walk the parse tree and render a single page for each node.
     nodes.root().walk(lambda node: pages.Page(node).render())

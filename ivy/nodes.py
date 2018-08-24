@@ -54,6 +54,12 @@ class Node():
         self['text'] = ''
         self['html'] = ''
 
+        self['date'] = '2018-08-08'
+        self['dirmark'] = ''
+        self['pre'] = None
+        self['next'] = None
+        self['author'] = None
+
     # String representation of the Node instance.
     def __repr__(self):
         return "<Node /%s>" % '/'.join(self.path)
@@ -111,6 +117,23 @@ class Node():
         for node in self.children.values():
             node.init()
 
+        # build pre and next node by CLine
+        self['author'] = self['author'] or site.config['author']
+        self['date'] = utils.timeFormat(self['date'])
+        if self['dirmark'] == site.config['dirmark']:
+            ns = self.childlistbydate
+            num = len(ns)
+            if num >= 2:
+                pre = ns[0]
+                for idx in range(num):
+                    if idx == 0:
+                        continue
+                    next = ns[idx]
+                    pre['next'] = next
+                    next['pre'] = pre
+                    pre = next
+            
+
         # Fire the 'init_node' event. This fires 'bottom up', i.e. when this
         # event fires on a node, all its descendants have already been
         # initialized.
@@ -148,6 +171,11 @@ class Node():
     @property
     def childlist(self):
         return [self.children[stem] for stem in sorted(self.children)]
+
+    # Returns a list of child nodes ordered by date.
+    @property
+    def childlistbydate(self):
+        return sorted(self.children.values(), key = lambda x: utils.timeTick(x["date"], format="%Y/%m/%d"), reverse=True)
 
     # True if the node has child nodes.
     @property
