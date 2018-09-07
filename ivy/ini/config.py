@@ -22,10 +22,10 @@ theme = "cline"
 # ------------------------------------------------------------------------------
 
 # Site title - how this is displayed depends on the theme.
-title = "Site Title"
+title = "SuperCLine"
 
 # Site tagline - how this is displayed depends on the theme.
-tagline = "Just another Ivy site"
+tagline = "Every morning tell your self that you are getting more and more Better!"
 
 
 # ------------------------------------------------------------------------------
@@ -50,4 +50,5 @@ extension = ".html"
 author = "CLine"
 dirmark = "__dir__"
 github = "https://github.com/supercline"
-twitter = ""
+twitter = "https://twitter.com/xfan_hsl"
+facebook = "https://www.facebook.com/xfanhsl"

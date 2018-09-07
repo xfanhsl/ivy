@@ -65,5 +65,6 @@ def get_pagefoot():
     foot = ['<div class="copyright">© ']
     foot.append('<a href="@root/about//">%s</a> 2018 | ' % ivy.site.config['author'])
     foot.append('<a href="%s">Github</a> | ' % ivy.site.config['github'])
+    foot.append('<a href="%s">Facebook</a> | ' % ivy.site.config['facebook'])
     foot.append('<a href="%s">Twitter</a></div>' % ivy.site.config['twitter'])
     return ''.join(foot)

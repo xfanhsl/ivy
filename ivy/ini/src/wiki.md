@@ -1,7 +1,7 @@
 ---
-title: 游戏研究
+title: WIKI
 dirmark: '__dir__'
 tags:
-  - game
+  - wiki
 ---
 
