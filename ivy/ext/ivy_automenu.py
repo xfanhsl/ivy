@@ -62,9 +62,10 @@ def sorted_children(node):
     return sorted(node.childlist, key=lambda n: n.get('menu_order', 0))
 
 def get_pagefoot():
-    foot = ['<div class="copyright">© ']
-    foot.append('<a href="@root/about//">%s</a> 2018 | ' % ivy.site.config['author'])
+    foot = ['<div class="copyright">© 蜀ICP备18032917号 ']
+    foot.append('<a href="@root/about//">%s</a> | ' % ivy.site.config['author'])
     foot.append('<a href="%s">Github</a> | ' % ivy.site.config['github'])
     foot.append('<a href="%s">Facebook</a> | ' % ivy.site.config['facebook'])
-    foot.append('<a href="%s">Twitter</a></div>' % ivy.site.config['twitter'])
+    foot.append('<a href="%s">Twitter</a> | ' % ivy.site.config['twitter'])
+    foot.append('<a href="%s">网易云课堂</a></div>' % ivy.site.config['yunclass'])
     return ''.join(foot)
