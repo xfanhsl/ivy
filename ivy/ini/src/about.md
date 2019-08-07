@@ -2,7 +2,7 @@
 title: 简介
 ---
 
-土生土长四川人，特别喜欢吃火锅等川渝美食，平时喜欢象棋、游泳、篮球，爱好游戏且从事游戏开发十余年，目前研究人工智能方向，有完美主义倾向和代码洁癖。
+土生土长四川人，特别喜欢吃火锅等川渝美食，平时喜欢象棋、游泳、篮球，爱好游戏且从事游戏开发十余年，目前专注引擎渲染和服务器架构，有完美主义倾向和代码洁癖。
 
 ## 个人优势 ##
 > - CTO团队管理、技术方案负责人
@@ -21,5 +21,5 @@ title: 简介
 > - C++、C#、Lua、Python、Go
 > - PhysX、Recast、Mysql、PgSQL
 > - STL、BOOST、SOCKET、IOCP、OPENGL、DIRECTX
-> - Unity、Unreal、Ogre
-> - Linux、Windows、IOS、Android
+> - Unreal、Unity、Ogre、Blender
+> - Gentoo Linux、Windows、IOS、Android
