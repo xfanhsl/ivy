@@ -1,5 +1,5 @@
 ---
-title: 工具之ANDROID、IOS广告支付SDK
+title: 工具之SDK
 date: '2018-08-07'
 dirmark: '__dir__'
 tags:

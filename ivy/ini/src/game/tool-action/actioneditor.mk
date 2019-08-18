@@ -20,4 +20,11 @@ tags:
 ![image link](../../assets/images/actioneditor.png)
 
 # 编辑器实现原理 #
-
+[[ Action ]]
+    包含了动作(Animation)、特效(Effect)、音效(Audio)、相机(Camera)、攻击定义(AttackDef)、Action打断(ActionInterrupt)等
+[[ AttackDef ]]
+	包含发射器、攻击定义体(Entity)、攻击定义体属性(EntityComponent)、运动器(Animator)、受击系统(AttackHit)、BUFF伤害数值系统等
+[[ ActionInterrupt ]]
+	本质是当前Action允许被其它Action在不同条件下的触发
+[[ AI ]]
+	本质是基于是一组Action在不同条件下的触发
