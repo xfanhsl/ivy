@@ -67,5 +67,6 @@ def get_pagefoot():
     foot.append('<a href="%s">Github</a> | ' % ivy.site.config['github'])
     foot.append('<a href="%s">Facebook</a> | ' % ivy.site.config['facebook'])
     foot.append('<a href="%s">Twitter</a> | ' % ivy.site.config['twitter'])
+    foot.append('<a href="%s">简书</a> | ' % ivy.site.config['jianshu'])
     foot.append('<a href="%s">网易云课堂</a></div>' % ivy.site.config['yunclass'])
     return ''.join(foot)
