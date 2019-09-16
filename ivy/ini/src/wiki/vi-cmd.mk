@@ -7,6 +7,8 @@ tags:
   - vi
 ---
 
+![](../assets/images/vim.jpg)
+
 ## 常用命令 ##
 :++
 	命令 | 描述 

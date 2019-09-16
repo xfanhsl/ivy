@@ -6,7 +6,7 @@ subtitle:
 ---
 
 
-## [基于Unity实现的动作技能可视化编辑器](@root/game/tool-action/actioneditor//)
+## [动作技能AI编辑器](@root/game/tool-action/actioneditor//)
 ![cline](assets/images/actioneditor.png)
 
 ## [GO微信小程序登录和支付](@root/game/tool-sdk/wxpay-with-go//)

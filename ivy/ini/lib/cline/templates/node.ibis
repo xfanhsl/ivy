@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>{{ node.meta_title || node.title || site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/GIF" href="@root/assets/icons/logo.png">
     <link rel="stylesheet" href="@root/assets/css/fonts.css">
     <link rel="stylesheet" href="@root/assets/css/theme.css">
     <link rel="stylesheet" href="@root/assets/css/pygments.css">
