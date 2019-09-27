@@ -13,9 +13,10 @@ tags:
 本文主要讲述基于Unity Engine实现的动作技能可视化编辑器，同时为展示编辑器的强大附带一个通用游戏开发框架。
 
 :!! [ error ]
-	- [Unity Asset Store](http://supercline.com/)
+	- [Unity Asset Store](https://assetstore.unity.com/packages/slug/154039)
 	- [GitHub](https://github.com/SuperCLine/actioneditor)
-	- [视频](http://supercline.com/)
+	- [视频-Bilibili](https://www.bilibili.com/video/av68020221/)
+  - [视频-Youtube](https://youtu.be/DnjRlCCigzM)
 
 ![image link](../../assets/images/actioneditor.png)
 

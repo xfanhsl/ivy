@@ -13,7 +13,7 @@ tags:
 - [微信小程序服务器SDK](https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_3&index=1)
 - [微信小程序客户端API](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/payment/wx.requestPayment.html)
 
-# 一、微信管理后台业务 #
+# 二、微信管理后台业务 #
 
 - 微信公众号管理后台，申请小程序，申请后需要注意两点:
 :blockquote
@@ -23,7 +23,7 @@ tags:
 
 - 微信公众号商户后台:商户号(MCHID)和API支付密钥(APIKEY)
 
-# 二、HTTPS证书 #
+# 三、HTTPS证书 #
 - [HTTPS服务器配置文档](https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=10_4)
 - 自己手动生成非认证调试证书
 :blockquote
@@ -43,7 +43,7 @@ tags:
 - 申请阿里或腾讯免费认证证书
 
 
-# [三、源码](https://github.com/SuperCLine/wxpay) #
+# [四、源码](https://github.com/SuperCLine/wxpay) #
 :!! [ warning ]
 	:p ||
 		`wxpay_payconfig.go` 支付配置模块
